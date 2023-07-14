@@ -1,8 +1,8 @@
-# Automatic1111
+# Automatic1111 SDXL
 
 > NOTICE
 >
-> This repository is IDENTICAL to https://github.com/cocktailpeanut/automatic1111.pinokio except that it clones the [dev branch](https://github.com/AUTOMATIC1111/stable-diffusion-webui/tree/dev) instead of the stable branch.
+> This repository is temporary, and IDENTICAL to https://github.com/cocktailpeanut/automatic1111.pinokio except that it clones the [sdxl branch](https://github.com/AUTOMATIC1111/stable-diffusion-webui/tree/sdxl) instead of the stable branch, just to try out the SDXL version.
 >
 > Can use to try out new features that are not yet merged
 

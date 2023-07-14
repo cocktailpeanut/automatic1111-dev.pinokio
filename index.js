@@ -95,7 +95,8 @@ class Automatic1111 {
       return {
         run: [
           { message: "brew install cmake protobuf rust python@3.10 git wget", },
-          { message: "git clone -b dev https://github.com/AUTOMATIC1111/stable-diffusion-webui automatic1111", path: path.resolve(__dirname) },
+          { message: "git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui automatic1111", path: path.resolve(__dirname) },
+          { message: "git switch sdxl", path: path.resolve(__dirname) },
         ]
       }
     } else {
@@ -107,14 +108,16 @@ class Automatic1111 {
           ]
         } else {
           run: [
-            { message: "git clone -b dev https://github.com/AUTOMATIC1111/stable-diffusion-webui automatic1111", path: __dirname },
+            { message: "git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui automatic1111", path: __dirname },
+            { message: "git switch sdxl", path: path.resolve(__dirname) },
           ]
         }
       } else {
         // normal
         return {
           run: [
-            { message: "git clone -b dev https://github.com/AUTOMATIC1111/stable-diffusion-webui automatic1111", path: __dirname },
+            { message: "git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui automatic1111", path: __dirname },
+            { message: "git switch sdxl", path: path.resolve(__dirname) },
           ]
         }
       }
