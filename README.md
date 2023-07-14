@@ -1,5 +1,11 @@
 # Automatic1111
 
+> NOTICE
+>
+> This repository is IDENTICAL to https://github.com/cocktailpeanut/automatic1111.pinokio except that it clones the [dev branch](https://github.com/AUTOMATIC1111/stable-diffusion-webui/tree/dev) instead of the stable branch.
+>
+> Can use to try out new features that are not yet merged
+
 One-click installer and automation API for [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
 ## Install
