@@ -11,13 +11,13 @@
     "method": "fs.download",
     "params": {
       "url": "https://huggingface.co/snowkidy/stable-diffusion-xl-base-0.9/resolve/main/sd_xl_base_0.9.safetensors",
-      "path": "automatic1111/modelsa/Stable-diffusion/sd_xl_base_0.9.safetensors"
+      "path": "automatic1111/models/Stable-diffusion/sd_xl_base_0.9.safetensors"
     }
   }, {
     "method": "notify",
     "params": {
       "html": "<p><i class='fa-solid fa-arrow-up-right-from-square'></i> Open Automatic1111 StableDiffusion Web UI at {{local.url}}</p>",
-      "href": "{{input}}",
+      "href": "{{local.url}}",
       "target": "_blank"
     }
   }, {
