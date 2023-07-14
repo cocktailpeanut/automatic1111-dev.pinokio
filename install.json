@@ -8,6 +8,11 @@
       "url": "{{input}}"
     }
   }, {
+    "method": "notify",
+    "params": {
+      "html": "Install complete. Downloading the Stable Diffusion XL model..."
+    }
+  }, {
     "method": "fs.download",
     "params": {
       "url": "https://huggingface.co/snowkidy/stable-diffusion-xl-base-0.9/resolve/main/sd_xl_base_0.9.safetensors",
