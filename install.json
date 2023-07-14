@@ -10,6 +10,7 @@
   }, {
     "method": "notify",
     "params": {
+      "type": "success",
       "html": "Install complete. Downloading the Stable Diffusion XL model..."
     }
   }, {
