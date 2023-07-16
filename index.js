@@ -41,7 +41,7 @@ class Automatic1111 {
       let newtext = text.replace(re, `$2"${defaultArgs}"`)
       await fs.promises.writeFile(path.resolve(__dirname, "automatic1111", "webui-user.sh"), newtext)
     } else if (this.platform === 'win32') {
-      let defaultArgs = "--api --no-half-vae"
+      let defaultArgs = "--api"
       let text = await fs.promises.readFile(path.resolve(__dirname, "automatic1111", "webui-user.bat"), "utf8")
       let re = /^(set COMMANDLINE_ARGS=)(.*)$/m
       let newtext = text.replace(re, `$1"${defaultArgs}"`)
