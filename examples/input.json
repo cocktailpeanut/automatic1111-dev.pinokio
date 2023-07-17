@@ -16,7 +16,9 @@
       "params": {
         "cfg_scale": 7,
         "steps": 30,
-        "prompt": "{{input.prompt}}"
+        "prompt": "{{input.prompt}}",
+        "width": 1024,
+        "height": 1024
       },
       "queue": true
     },
