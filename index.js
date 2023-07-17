@@ -35,7 +35,7 @@ class Automatic1111 {
       })
     }
     if (this.platform === 'darwin') {
-      let defaultArgs = "--skip-torch-cuda-test --upcast-sampling --use-cpu interrogate --api"
+      let defaultArgs = "--skip-torch-cuda-test --upcast-sampling --use-cpu interrogate --no-half --api"
       let text = await fs.promises.readFile(path.resolve(__dirname, "automatic1111", "webui-user.sh"), "utf8")
       let re = /^(#?)(export COMMANDLINE_ARGS=)(.+)$/m
       let newtext = text.replace(re, `$2"${defaultArgs}"`)
