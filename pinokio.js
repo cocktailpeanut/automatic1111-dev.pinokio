@@ -5,6 +5,9 @@ const exists = (filepath) => {
   return new Promise(r=>fs.access(filepath, fs.constants.F_OK, e => r(!e)))
 }
 module.exports = {
+  title: "Automatic1111",
+  description: "Stable Diffusion web UI",
+  icon: "icon.png",
   update: async (kernel) => {
     return "update.json"
   },
